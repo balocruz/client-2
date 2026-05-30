@@ -378,6 +378,10 @@ nav {
   border-top: 1px solid var(--borderColor);
 }
 
+.ctas h2 {
+  font-size: var(--text--font);
+  font-weight: 800;
+}
 .ctas h2::after {
   display: none;
 }
@@ -389,16 +393,20 @@ nav {
   width: 100%;
 }
 .ctas a {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
   background: transparent;
-  color: var(--textMain);
+  color: #ddfffb;
   border: 1px solid #14b8a6;
   padding: 15px 25px;
   border-radius: 20px;
-  transition: background-color 300ms ease-in-out;
+  transition:
+    background-color 300ms ease-in-out,
+    color 300ms ease-in-out;
 }
 
 .ctas a:hover {
+  color: var(--textMain);
   background-color: #14b8a6;
 }
 
